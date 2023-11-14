@@ -1,5 +1,9 @@
 var btns = document.querySelectorAll(".drum");
 
+window.ondblclick = (e)=>{
+  e.preventDefault();
+}
+
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (e) => {
     var char = e.target.innerHTML;
